@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hara Taisei | PROFILE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>PROFILE</h1>
+
+    <nav class="tabs" aria-label="ページ内メニュー">
+      <button class="tab-button is-active" type="button" data-tab="profile">PROFILE</button>
+      <button class="tab-button" type="button" data-tab="photos">PHOTOS</button>
+      <button class="tab-button" type="button" data-tab="links">LINKS</button>
+    </nav>
+
+    <section id="profile" class="panel is-active" aria-labelledby="profile-heading">
+      <h2 id="profile-heading">PROFILE</h2>
+
+      <div class="name-block">
+        <p class="name-ja">原 大成</p>
+        <p class="name-en">Hara Taisei</p>
+      </div>
+
+      <dl class="profile-list">
+        <div>
+          <dt>所属</dt>
+          <dd>奈良先端科学技術大学院大学</dd>
+        </div>
+        <div>
+          <dt>興味</dt>
+          <dd>NLP, LLM, 自然言語処理, 機械学習，推薦システム，データ分析，webアプリケーション開発</dd>
+        </div>
+        <div>
+          <dt>研究分野</dt>
+          <dd>LLM, 自然言語処理, 推薦システム</dd>
+        </div>
+        <div>
+          <dt>趣味</dt>
+          <dd>ランニング，筋トレ，麻雀，ベース弾く，映画鑑賞，音楽をdigる etc..</dd>
+        </div>
+        <div>
+          <dt>最近ハマっていること</dt>
+          <dd>欄</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="photos" class="panel" aria-labelledby="photos-heading" hidden>
+      <h2 id="photos-heading">PHOTOS</h2>
+
+      <figure class="photo-item">
+        <img src="assets/research-desk.png" alt="研究や制作をイメージした机の写真">
+        <figcaption>作業机のイメージ。ここに自分で撮った写真を入れると、ぐっと本人感が出ます。</figcaption>
+      </figure>
+
+      <figure class="photo-item empty-photo">
+        <div class="photo-placeholder">PHOTO</div>
+        <figcaption>研究室、旅行、趣味、日常など。短いコメントを添えるだけで雰囲気が出ます。</figcaption>
+      </figure>
+    </section>
+
+    <section id="links" class="panel" aria-labelledby="links-heading" hidden>
+      <h2 id="links-heading">LINKS</h2>
+
+      <ul class="link-list">
+        <li><a href="#" aria-label="GitHub profile link placeholder">GitHub</a></li>
+        <li><a href="#" aria-label="Research lab link placeholder">Lab / University</a></li>
+        <li><a href="mailto:example@example.com">Mail</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
