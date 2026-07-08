@@ -131,9 +131,6 @@ h2 {
 
 .name-ja {
   margin: 0;
-}
-
-.name-ja {
   color: var(--text);
   font-size: clamp(1.7rem, 5vw, 2.7rem);
 }
@@ -148,6 +145,18 @@ h2 {
   letter-spacing: 0;
 }
 
+.level-badge {
+  display: inline-block;
+  margin-left: 16px;
+  padding: 2px 12px;
+  border: 3px solid var(--border);
+  color: #161313;
+  background: var(--gold);
+  box-shadow: 0 0 0 3px var(--border-dark);
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  vertical-align: middle;
+}
+
 .profile-list {
   display: grid;
   gap: 12px;
@@ -157,7 +166,7 @@ h2 {
 
 .profile-list div {
   display: grid;
-  grid-template-columns: 8rem minmax(0, 1fr);
+  grid-template-columns: 10.5rem minmax(0, 1fr);
   gap: 18px;
   padding: 5px 0;
 }
@@ -185,6 +194,16 @@ a:focus-visible {
 
 .profile-link {
   color: var(--gold);
+}
+
+.education-vertical {
+  display: grid;
+  gap: 2px;
+}
+
+.education-arrow {
+  color: var(--gold);
+  padding-left: 0.5rem;
 }
 
 .photo-item {
