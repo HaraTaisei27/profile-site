@@ -129,8 +129,7 @@ h2 {
   margin: 6px 0 30px 22px;
 }
 
-.name-ja,
-.name-en {
+.name-ja {
   margin: 0;
 }
 
@@ -139,9 +138,14 @@ h2 {
   font-size: clamp(1.7rem, 5vw, 2.7rem);
 }
 
-.name-en {
-  color: var(--cyan);
-  font-size: 1rem;
+.name-ja ruby {
+  ruby-position: over;
+}
+
+.name-ja rt {
+  color: var(--muted);
+  font-size: 0.42em;
+  letter-spacing: 0;
 }
 
 .profile-list {
@@ -160,11 +164,13 @@ h2 {
 
 .profile-list dt {
   color: var(--gold);
+  font-size: 1.08rem;
 }
 
 .profile-list dd {
   margin: 0;
   color: var(--muted);
+  font-size: 1.12rem;
 }
 
 a {
@@ -175,6 +181,10 @@ a {
 a:hover,
 a:focus-visible {
   text-decoration: underline;
+}
+
+.profile-link {
+  color: var(--gold);
 }
 
 .photo-item {
