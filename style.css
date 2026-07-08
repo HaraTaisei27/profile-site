@@ -251,8 +251,44 @@ a:focus-visible {
   font-weight: 400;
 }
 
+.work-links {
+  display: inline-flex;
+  gap: 8px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.work-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 8px;
+  border: 1px solid var(--border);
+  color: var(--gold);
+  background: rgba(255, 212, 90, 0.06);
+  text-decoration: none;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  transition:
+    background 0.16s ease,
+    color 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.work-link:hover,
+.work-link:focus-visible {
+  color: #161313;
+  background: var(--gold);
+  box-shadow: 0 0 10px rgba(255, 212, 90, 0.2);
+  text-decoration: none;
+}
+
 .photo-item {
   margin: 0 0 34px 22px;
+  transition: transform 0.2s ease;
+}
+
+.photo-item:hover {
+  transform: translateY(-4px);
 }
 
 .photo-item img,
@@ -264,6 +300,16 @@ a:focus-visible {
   background: #0d1020;
   box-shadow: 0 0 0 4px var(--border-dark);
   object-fit: cover;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.photo-item:hover img {
+  transform: scale(1.01);
+  box-shadow:
+    0 0 0 4px var(--border-dark),
+    0 0 18px rgba(255, 212, 90, 0.24);
 }
 
 .photo-placeholder {
@@ -278,6 +324,10 @@ figcaption {
   max-width: 620px;
   margin-top: 14px;
   color: var(--muted);
+}
+
+.photo-item:hover figcaption {
+  color: var(--text);
 }
 
 .link-list {
@@ -367,5 +417,11 @@ figcaption {
   .works-list {
     padding-left: 1.2rem;
     font-size: 0.98rem;
+  }
+
+  .work-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 0 0;
   }
 }
