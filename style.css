@@ -206,6 +206,35 @@ a:focus-visible {
   padding-left: 0.5rem;
 }
 
+.works-block {
+  margin: 0 0 28px 22px;
+}
+
+.works-block h3 {
+  margin: 0 0 10px;
+  color: var(--gold);
+  font-size: 1.18rem;
+  font-weight: 400;
+}
+
+.works-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding-left: 1.4rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.works-list li {
+  padding-left: 4px;
+}
+
+.works-list strong {
+  color: var(--gold);
+  font-weight: 400;
+}
+
 .photo-item {
   margin: 0 0 34px 22px;
 }
@@ -271,6 +300,7 @@ figcaption {
 
   .name-block,
   .profile-list,
+  .works-block,
   .photo-item,
   .link-list {
     margin-left: 10px;
@@ -279,5 +309,10 @@ figcaption {
   .profile-list div {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .works-list {
+    padding-left: 1.2rem;
+    font-size: 0.98rem;
   }
 }
